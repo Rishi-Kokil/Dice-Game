@@ -1,8 +1,9 @@
 :root{
     --bg-color : #222831;
     --prim-color : #DDDDDD;
-    --sec-color : #2E4F4F;
+    --sec-color : #30475E;
     --tert-color : #CBE4DE;
+    --accent-color : #F05454;
 }
 body{
     background-color: var(--bg-color);
@@ -16,10 +17,38 @@ h1{
 
 .container{
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.innerContainer{
+    display: grid;
+    padding: 10px;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    width: 90%;
 }
 
 #refreshBtn{
-    background-color: black;
-    color: white;
+    background-color: var(--prim-color);
+    color: var(--bg-color);
+    border-radius: 50px;
+    border: none;
+    font-family: serif;
+    font-weight: 400;
+    font-size: 2rem;
+}
+#refreshBtn:hover{
+    background-color: var(--sec-color);
+    color: var(--prim-color);
 }
 
+.dice1{
+    min-height: 300px;
+    background-color: azure;
+     
+}
+.dice2{
+    min-height: 300px;
+    background-color: azure;
+}
