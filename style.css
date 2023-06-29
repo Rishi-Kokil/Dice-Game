@@ -1,0 +1,25 @@
+:root{
+    --bg-color : #222831;
+    --prim-color : #DDDDDD;
+    --sec-color : #2E4F4F;
+    --tert-color : #CBE4DE;
+}
+body{
+    background-color: var(--bg-color);
+    color: var(--prim-color);
+}
+
+h1{
+    text-align: center;
+    font-size: 5rem;
+}
+
+.container{
+    height: 100vh;
+}
+
+#refreshBtn{
+    background-color: black;
+    color: white;
+}
+
