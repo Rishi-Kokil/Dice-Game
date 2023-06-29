@@ -14,20 +14,19 @@ h1{
     text-align: center;
     font-size: 5rem;
 }
-
 .container{
     height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
-}
-.innerContainer{
-    display: grid;
-    padding: 10px;
-    grid-template-columns: 1fr 1fr;
     gap: 2rem;
-    width: 90%;
 }
+
+button{
+    max-width: 400px;
+    min-width: 100px;
+    margin: auto;
+}
+
 
 #refreshBtn{
     background-color: var(--prim-color);
@@ -42,13 +41,21 @@ h1{
     background-color: var(--sec-color);
     color: var(--prim-color);
 }
+.innerContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+.winner{
+    text-align: center;
+    color: var(--accent-color);
+    font-size: 2rem;
+}
 
-.dice1{
-    min-height: 300px;
-    background-color: azure;
-     
+img{
+    max-width: 600px;
+    min-width: 300px;
 }
-.dice2{
-    min-height: 300px;
-    background-color: azure;
-}
+
+
