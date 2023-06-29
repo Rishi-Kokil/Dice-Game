@@ -25,6 +25,7 @@ button{
     max-width: 400px;
     min-width: 100px;
     margin: auto;
+    box-shadow: 1.2px 1px 10px black;
 }
 
 

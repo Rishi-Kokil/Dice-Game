@@ -2,9 +2,11 @@ let player1 , player2 ;
 let winner_text;
 const btn = document.querySelector("#refreshBtn");
 btn.addEventListener("click" , ()=>{
-    
+
     player1 = Math.floor((Math.random() * 6) + 1);
     player2 = Math.floor((Math.random() * 6) + 1);
+
+    // document.querySelector(".winner").style.transition = "all 8s";
 
     player1_image = "./images/dice" + player1 + ".png";
     player2_image = "./images/dice" + player2 + ".png";
